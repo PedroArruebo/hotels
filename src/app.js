@@ -8,7 +8,7 @@ import HotelsItemDetail from './components/HotelsItemDetail';
 const RouteMapper = (route, navigationOperations, onComponentRef) => {
 	if (route.name === 'hotels') {
 	    return (
-	    	<View>
+	    	<View style={{flex:1}}>
 		    	<Header headerText="Elegí tu Hotel"/>
 	      		<Hotels navigator={navigationOperations} />
 		    </View>
