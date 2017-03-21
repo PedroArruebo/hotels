@@ -1,0 +1,38 @@
+[  
+   {  
+      "name":"Hotel 1",
+      "price":"2200",
+      "offer":"Desayuno",
+      "image":"./images/1.jpg",
+   },
+   {  
+      "name":"Hotel 2",
+      "price":"2800",
+      "offer":"Desayuno Continental",
+      "image":"./images/2.jpg",
+   },
+   {  
+      "name":"Hotel 3",
+      "price":"3000",
+      "offer":"Desayuno y Comida",
+      "image":"./images/3.jpg",
+   },
+   {  
+      "name":"Hotel 4",
+      "price":"2350",
+      "offer":"Desayuno",
+      "image":"./images/4.jpg",
+   },
+   {  
+      "name":"Hotel 5",
+      "price":"1500",
+      "offer":"Solo la habitación",
+      "image":"./images/5.jpg",
+   },
+   {  
+      "name":"Hotel 6",
+      "price":"1650",
+      "offer":"Solo la habitación",
+      "image":"./images/6.jpg",
+   }
+]
