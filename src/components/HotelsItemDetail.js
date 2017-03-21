@@ -17,7 +17,7 @@ const HotelsItemDetail = ({hotel,navigator}) => {
 	              // Dim button a little bit when pressed
 	              activeOpacity={0.7}
 	            >
-	              	<Text style={styles.buttonBack}> Regresar</Text>
+	              	<Icon name="arrow-left" size={20} color="#fff" style={styles.hotelTextDetail}/>
 	            </TouchableOpacity>
 				<Text style={styles.hotelTextDetail}> Detalle</Text>
 			</View>
