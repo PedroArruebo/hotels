@@ -21,16 +21,19 @@ const HotelItem = ({hotel}) => {
 				/>
 			</CardSection>
 			<CardSection>
-				<View>
-					<Text>{offer}</Text>
-				</View>
-				<View>
-					<Icon name="star" size={15} color="#ffab00" style={{padding:3}}/>
-					<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-					<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-					<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-					<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-					<Text>{offer}</Text>
+				<View style={{flexDirection:'column'}}>
+					<Text style={styles.hotelTextName}>{name}</Text>
+					<View style={{flexDirection:'row'}}>
+						<Icon name="star" size={15} color="#ffab00" style={{padding:3}}/>
+						<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
+						<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
+						<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
+						<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
+					</View>
+					<View style={{flexDirection:'row'}}>
+						<Icon name="coffee" size={15} color="#9e9e9e" style={{padding:3}}/>
+						<Text style={styles.hotelTextName}>{offer}</Text>
+					</View>
 				</View>
 				<View style={styles.priceStyle}>
 					<Text>precio por noche</Text>
