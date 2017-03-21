@@ -26,7 +26,7 @@ const HotelsItemDetail = ({hotel,navigator}) => {
 					<CardSection>
 						<View style={{flexDirection:'column'}}>
 							<Text style={styles.hotelTextName}>{hotel.name}</Text>
-							<View>
+							<View style={{flexDirection:'row'}}>
 								<Icon name="star" size={15} color="#ffab00" style={{padding:3}}/>
 								<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
 								<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
