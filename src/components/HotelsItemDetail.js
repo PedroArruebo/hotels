@@ -39,11 +39,12 @@ const HotelsItemDetail = ({hotel,navigator}) => {
 					</CardSection>
 					<CardSection>
 						<MapView
-				          initialRegion={{
-						      latitude: 37.78825,
-						      longitude: -122.4324,
-						      latitudeDelta: 0.0922,
-						      longitudeDelta: 0.0421,
+							style={styles.map}
+				          	initialRegion={{
+						      	latitude: 37.78825,
+						      	longitude: -122.4324,
+						      	latitudeDelta: 0.0922,
+						      	longitudeDelta: 0.0421,
 						    }}
 				        >
 				        </MapView>
@@ -54,6 +55,11 @@ const HotelsItemDetail = ({hotel,navigator}) => {
 	)		
 };
 const styles = {
+	mpa:{
+		height: 200,
+		width: null,
+		flex: 1
+	},
 	hotelContainerStyle: {
 	    flex: 1                         // Padding inside
 	},
