@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Image, Text, TouchableOpacity, View, Picker } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Card, CardSection, Star } from './common';
+import { Card, CardSection, Star, Button } from './common';
 
 const Item = Picker.Item;
 
@@ -15,6 +15,8 @@ class HotelItemCard extends Component {
     newState[key] = value;
     this.setState(newState);
   };
+
+ 
   // Extract movie and onPress props passed from List component
   render({ hotel, onPress } = this.props) {
     const {
