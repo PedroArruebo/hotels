@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
-import { Card, CardSection } from './common';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Card, CardSection, Star } from './common';
 
 class HotelItemCard extends Component {
   
@@ -10,7 +11,8 @@ class HotelItemCard extends Component {
       name,
       price,
       offer,
-      image
+      image,
+      stars
     } = hotel;
     return (
       // Row press handler
@@ -30,13 +32,13 @@ class HotelItemCard extends Component {
             />
           </CardSection>
           <CardSection>
-            <View>
-              <Text>{name}</Text>
-            </View>
-          </CardSection>
-          <CardSection>
-            <View>
-              <Text>{offer}</Text>
+            <View style={{flexDirection:'column'}}>
+              <Text style={styles.hotelTextName}>{name}</Text>
+              <Star number={stars.number} color={stars.color}/>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="coffee" size={15} color="#9e9e9e" style={{padding:3}}/>
+                <Text style={styles.hotelTextName}>{offer}</Text>
+              </View>
             </View>
             <View style={styles.priceStyle}>
               <Text>precio por noche</Text>
