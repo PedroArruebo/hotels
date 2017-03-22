@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Star, Card, CardSection } from './common';
 import MapView from 'react-native-maps';
 const HotelsItemDetail = ({hotel,navigator}) => {
-
+	
 	
 	return (
 		<ScrollView style={styles.hotelContainerStyle}>
@@ -45,6 +45,7 @@ const HotelsItemDetail = ({hotel,navigator}) => {
 				        >
 				        </MapView>
 					</CardSection>
+					
 				</Card>
 			</View>			
 		</ScrollView>

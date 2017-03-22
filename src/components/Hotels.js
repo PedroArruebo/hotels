@@ -16,7 +16,8 @@ class Hotels extends Component{
    {  
       "name":"Hotel 1",
       "price":"2,200",
-      "offer":"Desayuno",
+      "breakfast":"Desayuno",
+      "onlyroom":"Solo la habitación",
       "image":"http://a.otcdn.com/headers/ilusion/img/hoteles_destinia.jpg",
       "stars": {
       	"number": 3,
@@ -26,7 +27,8 @@ class Hotels extends Component{
    {  
       "name":"Hotel 2",
       "price":"2,800",
-      "offer":"Desayuno Continental",
+      "breakfast":"Desayuno",
+      "onlyroom":"Solo la habitación",
       "image":"http://www.salemgroups.com/new/images/icons/png/TravelsSlideshow/hotelreservation.jpg",
       "stars": {
       	"number": 4,
@@ -36,7 +38,8 @@ class Hotels extends Component{
    {  
       "name":"Hotel 3",
       "price":"3,000",
-      "offer":"Desayuno y Comida",
+      "breakfast":"Desayuno",
+      "onlyroom":"Solo la habitación",
       "image":"http://www.arqhys.com/contenidos/fotos/contenidos/Requisitos-para-los-hoteles.jpg",
       "stars": {
       	"number": 4,
@@ -46,7 +49,8 @@ class Hotels extends Component{
    {  
       "name":"Hotel 4",
       "price":"2,350",
-      "offer":"Desayuno",
+      "breakfast":"Desayuno",
+      "onlyroom":"Solo la habitación",
       "image":"http://www.hotelesmision.com.mx/img/slide-06.jpg",
       "stars": {
       	"number": 5,
@@ -56,7 +60,8 @@ class Hotels extends Component{
    {  
       "name":"Hotel 5",
       "price":"1,500",
-      "offer":"Solo la habitación",
+      "breakfast":"Desayuno",
+      "onlyroom":"Solo la habitación",
       "image":"https://media-cdn.tripadvisor.com/media/photo-s/02/a8/d4/55/hotel-bonampak.jpg",
       "stars": {
       	"number": 3,
@@ -66,7 +71,8 @@ class Hotels extends Component{
    {  
       "name":"Hotel 6",
       "price":"1,650",
-      "offer":"Solo la habitación",
+      "breakfast":"Desayuno",
+      "onlyroom":"Solo la habitación",
       "image":"http://viajes-cruceros.net/wp-content/uploads/2011/04/6.jpg",
       "stars": {
       	"number": 5,
