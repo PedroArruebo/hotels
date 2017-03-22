@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { ScrollView , View, Text, TouchableOpacity, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Header, Card, CardSection } from './common';
+import { Star, Card, CardSection } from './common';
 import MapView from 'react-native-maps';
 const HotelsItemDetail = ({hotel,navigator}) => {
 
@@ -27,11 +27,7 @@ const HotelsItemDetail = ({hotel,navigator}) => {
 						<View style={{flexDirection:'column'}}>
 							<Text style={styles.hotelTextName}>{hotel.name}</Text>
 							<View style={{flexDirection:'row'}}>
-								<Icon name="star" size={15} color="#ffab00" style={{padding:3}}/>
-								<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-								<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-								<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
-								<Icon name="star" size={15} color="#ffab00" style={{padding:3}} />
+								<Star number={hotel.stars.number} color={hotel.stars.color}/>
 							</View>
 						</View>
 							
