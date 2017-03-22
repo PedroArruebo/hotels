@@ -6,40 +6,43 @@ const ItemDropdown = ({onPress, item}) => {
 	const {ItemDropdownStyle, textStyle} = styles;
 	return (
 		<TouchableOpacity style={ItemDropdownStyle} onPress={onPress}>
-			<View style={{flexDirection:'row',flex: 1}}>
-			if (item.selected) {
-				if (item.name == "onlyroom") {
-					<View style={{flexDirection:'row',flex: 2}}>
-		                <Icon name="bed" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
-		                <Text>{item.text}</Text>
-		            </View>
-		            <View style={{flex: 1, alignItems:'flex-end'}}>
-		                <Icon name="fa-check-square" size={15} color="#f39a2e" style={{padding:3, marginRight:5}}/>
-		            </View>
-				} else {
-					<View style={{flexDirection:'row',flex: 2}}>
-		                <Icon name="bed" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
-		                <Text>{item.text}</Text>
-		            </View>
-		            <View style={{flex: 1, alignItems:'flex-end'}}>
-		                <Icon name="fa-check-square" size={15} color="#f39a2e" style={{padding:3, marginRight:5}}/>
-		            </View>
-				}
-			} else {
-				if (item.name == "onlyroom") {
+			
+				if (item.selected && item.name == "onlyroom") {
 					<View style={{flexDirection:'row',flex: 1}}>
-		                <Icon name="bed" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
-		                <Text>{item.text}</Text>
-		            </View>
+						<View style={{flexDirection:'row',flex: 2}}>
+				            <Icon name="bed" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
+				            <Text>{item.text}</Text>
+				        </View>
+				        <View style={{flex: 1, alignItems:'flex-end'}}>
+				            <Icon name="fa-check-square" size={15} color="#f39a2e" style={{padding:3, marginRight:5}}/>
+				        </View>
+			         </View>
 				} else {
 					<View style={{flexDirection:'row',flex: 1}}>
-		                <Icon name="coffee" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
-		                <Text>{item.text}</Text>
-		            </View>
+						<View style={{flexDirection:'row',flex: 1}}>
+				            <Icon name="bed" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
+				            <Text>{item.text}</Text>
+				        </View>
+			        </View>
 				}
-			}
-              
-            </View>
+              	if (item.selected && item.name == "breakfast") {
+					<View style={{flexDirection:'row',flex: 1}}>
+						<View style={{flexDirection:'row',flex: 2}}>
+				            <Icon name="coffee" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
+				            <Text>{item.text}</Text>
+				        </View>
+				        <View style={{flex: 1, alignItems:'flex-end'}}>
+				            <Icon name="fa-check-square" size={15} color="#f39a2e" style={{padding:3, marginRight:5}}/>
+				        </View>
+			         </View>
+				} else {
+					<View style={{flexDirection:'row',flex: 1}}>
+						<View style={{flexDirection:'row',flex: 1}}>
+				            <Icon name="coffee" size={15} color="#0f0f0f" style={{padding:3, marginRight:5}}/>
+				            <Text>{item.text}</Text>
+				        </View>
+			        </View>
+				}
 		</TouchableOpacity>
 	);
 };
